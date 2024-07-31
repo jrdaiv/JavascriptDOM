@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="bg-dark">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        <header>
+            <!-- place navbar here -->
+        </header>
+
+
+        <main class="bg-dark">
+            <h1 class="display-5 text-center text-white text-decoration-underline"><b>This is my form</b></h1>
+            <div class="container mt-5">
+                <form id="myForm" onsubmit="handleSubmit()" method="post">
+                    <div>
+                        <label for="name">Full Name</label><br>
+                        <input type="text" id="name" onclick="changeColor()" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Customer@email.com" required>
+                    </div>
+                    <div>
+                        <label for="Message">Message</label><br>
+                        <textarea name="Message" id="message" class="form-control" placeholder="Enter message here" id="message"></textarea>
+                    </div>
+                    <div>
+                        <label for="btn"></label>
+                        <input type="button" onmouseover="btnColor2()" id="myBtn2" value="Random Button">
+                    </div>
+                    <div class="button mt-4">
+                        <button type="submit" onclick="btnColor()" class="form-control" id="myBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="stylingJavascript.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
